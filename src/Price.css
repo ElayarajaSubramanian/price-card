@@ -1,0 +1,19 @@
+.card {
+  border-radius: 1rem !important;
+}
+hr {
+  color: #ccc;
+}
+.card-price {
+  font-size: 3rem;
+}
+.period {
+  font-size: 0.8rem;
+}
+.card-body li {
+  padding: 0.5rem 0;
+}
+.card-title {
+  font-size: 1rem;
+  color: rgb(184, 184, 184) !important;
+}
