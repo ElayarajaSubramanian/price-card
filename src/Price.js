@@ -13,12 +13,11 @@ const Price = (props) => {
         <hr />
         {props.children}
         <div className="d-grid">
-          <a
-            href="#"
+          <button
             className="btn btn-primary text-uppercase rounded-pill btn-medium py-2"
           >
             Button
-          </a>
+          </button>
         </div>
       </div>
     </div>
