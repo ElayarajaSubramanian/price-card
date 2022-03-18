@@ -1,171 +1,194 @@
-import "./App.css";
 import Price from "./Price";
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
 
 function App() {
+  const priceData = [
+    {
+      list: "GB Storage"
+    },
+    {
+      list: "Unlimited Public Projects"
+    },
+    {
+      list: "Community Access"
+    },
+    {
+      list: "Unlimited Private Projects"
+    },
+    {
+      list: "Dedicated Phone Support"
+    },
+    {
+      list: "Free Subdomain"
+    },
+    {
+      list: "Monthly Status Reports"
+    }
+  ];
+  const userType = ["Single User", "5 Users", "Multiple Users"];
   return (
-    <div className="container">
+    <div className="container-fluid">
       <div className="row bg-primary p-4">
         <div className="col-lg-4">
-          <Price price="0">
+          <Price price="0" usertype="Single User">
             <ul className="fa-ul">
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Single User
+                {userType[0]}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                5GB Storage
+                {priceData[0].list}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Unlimited Public Projects
+                {priceData[1].list}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Community Access
+                {priceData[2].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-times"></i>
                 </span>
-                Unlimited Private Projects
+                {priceData[3].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-times"></i>
                 </span>
-                Dedicated Phone Support
+                {priceData[4].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-times"></i>
                 </span>
-                Free Subdomain
+                {priceData[5].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-times"></i>
                 </span>
-                Monthly Status Reports
+                {priceData[6].list}
               </li>
             </ul>
           </Price>
         </div>
         <div className="col-lg-4">
-          <Price price="9">
+          <Price price="9" usertype="5 Users">
             <ul className="fa-ul">
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                5 Users
+                {userType[1]}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                50GB Storage
+                {priceData[0].list}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Unlimited Public Projects
+                {priceData[1].list}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Community Access
+                {priceData[2].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Unlimited Private Projects
+                {priceData[3].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Dedicated Phone Support
+                {priceData[4].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Free Subdomain
+                {priceData[5].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-times"></i>
                 </span>
-                Monthly Status Reports
+                {priceData[6].list}
               </li>
             </ul>
           </Price>
         </div>
         <div className="col-lg-4">
-          <Price price="49">
+          <Price price="49" usertype="Unlimited Users">
             <ul className="fa-ul">
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Unlimited Users
+                {userType[2]}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                150GB Storage
+                {priceData[0].list}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Unlimited Public Projects
+                {priceData[1].list}
               </li>
               <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Community Access
+                {priceData[2].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Unlimited Private Projects
+                {priceData[3].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Dedicated Phone Support
+                {priceData[4].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Free Subdomain
+                {priceData[5].list}
               </li>
-              <li className="text-muted">
+              <li>
                 <span className="fa-li">
                   <i className="fas fa-check"></i>
                 </span>
-                Monthly Status Reports
+                {priceData[6].list}
               </li>
             </ul>
           </Price>

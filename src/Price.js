@@ -13,9 +13,7 @@ const Price = (props) => {
         <hr />
         {props.children}
         <div className="d-grid">
-          <button
-            className="btn btn-primary text-uppercase rounded-pill btn-medium py-2"
-          >
+          <button className="btn btn-primary text-uppercase rounded-pill btn-medium py-2">
             Button
           </button>
         </div>

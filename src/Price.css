@@ -1,5 +1,10 @@
 .card {
   border-radius: 1rem !important;
+  height: calc(100vh - 3rem);
+  transition: all 0.4s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-7px);
 }
 hr {
   color: #ccc;
@@ -11,9 +16,12 @@ hr {
   font-size: 0.8rem;
 }
 .card-body li {
-  padding: 0.5rem 0;
+  padding: 0.8rem 0;
 }
 .card-title {
   font-size: 1rem;
   color: rgb(184, 184, 184) !important;
+}
+.card .btn {
+  padding: 0.7rem 0 !important;
 }
